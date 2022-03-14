@@ -1,0 +1,216 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: white;
+  margin-top: 75px;
+}
+
+/* 画面上部の「パーソナルフード」帯部分 */
+.title-contents {
+  width: 100vw;
+  background-image: image-url('food4.png');
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #333333;
+}
+
+.service-title {
+  font-size: 10vh;
+}
+
+.service-explain {
+  font-size: 5vh;
+  line-height: 40px;
+}
+/* //画面上部の「パーソナルフード」帯部分 */
+
+/* 「パーソナル食とは」の説明部分 */
+.section-contents {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 20px 0;
+}
+
+.section-contents-left {
+  width: 48%;
+  margin-right: 20px;
+}
+
+.section-titile {
+  font-size: 6vh;
+  text-align: center;
+  margin-top: 10vh;
+  padding: 20px 0;
+}
+
+.section-explain {
+  padding: 25px;
+  line-height: 2;
+  font-size: 2.5vh;
+}
+
+.section-contents-right {
+  display: block;
+  width: 48%;
+}
+
+.right-pict {
+  width: 100%;
+}
+/* //「パーソナル食とは」の説明部分 */
+
+/* サービスの特徴部分 */
+.select-reason-contents {
+  padding: 0 12vw;
+}
+
+.select-reason-contents>.title {
+  text-align: center;
+  font-size: 5vh;
+  font-weight: bold;
+  margin-bottom: 7vh;
+}
+
+.reason-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reason-lists>.list {
+  width: 33vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-pict {
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.reason-list-text {
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 50px;
+}
+
+.reason-list-description {
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* //サービスの特徴部分 */
+
+/* 新着投稿一覧 */
+
+.item-contents {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.item-contents>.title {
+  font-size: 5vh;
+  line-height: 1.4;
+  font-weight: bold;
+  position: relative;
+}
+
+.item-contents>.title::after {
+  content: '';
+  width: 250px;
+  height: 4px;
+  background-color: #FF5F17;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-lists>.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+
+.item-img-content {
+  position: relative;
+}
+
+.item-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+.sold-out>span {
+  color: #FFF;
+  font-size: 45px;
+  font: bold;
+}
+
+
+.item-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+}
+
+.post-titile {
+  font-size: 2.5vh;
+}
+
+.star-btn {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  height: 2vh;
+  width: 2vh;
+  margin-right: 0.5vw;
+}
+
+.star-count {
+  font-size: 2vh;
+}
+
+/* //新着投稿一覧 */
+
+/* 今すぐ相談するボタン */
+.purchase-btn {
+  width: 300px;
+  background: transparent;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.purchase-btn-icon {
+  width: 100%;
+}
+/* //今すぐ相談するボタン */
