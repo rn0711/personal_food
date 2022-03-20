@@ -1,0 +1,15 @@
+.signin-footer {
+  width: 100%;
+  min-width: 800px;
+  height: 100px;
+  background-image: url('signin4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-footer-title {
+  color: black;
+}

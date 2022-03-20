@@ -1,0 +1,46 @@
+.form-wrap-session {
+  width: 90%;
+  height: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background: linear-gradient(#FFFFEE, #E9FFA5);
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-default-session {
+  width: 100%;
+  margin-top: 10px;
+  height: 58px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  resize: none;
+  border-radius: 30px;
+}
+
+.login-btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.login-red-btn {
+  width: 100%;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.login-flash-message {
+  text-align: center;
+  color: red;
+}

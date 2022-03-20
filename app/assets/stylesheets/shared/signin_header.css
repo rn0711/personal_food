@@ -1,0 +1,17 @@
+.signin-header {
+  width: 100%;
+  min-width: 800px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('signin3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.signin-title {
+  font-size: 30px;
+  color: 	#003300;
+  text-shadow:1px 1px 2px;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN', sans-serif;
+}
