@@ -30,22 +30,52 @@
   font-weight: bold;
 }
 
-.nav {
+.user_nav {
   font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 1vh 0;
+  position: relative;
+  right: 0;
 }
-
-.lists-right {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN', sans-serif;;
+.user_nav span {
+  display: block;
+  float: left;
+  padding-top: 5px;
+  margin-left: 30px;
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid #57C3E9;
 }
-
+.user_nav span:after {
+  content: '▼';
+  font-size: .8em;
+  margin-left: -2px;
+}
+.user_nav span:hover ul {
+  color: #57C3E9;
+  display: block;
+}
+.user_nav ul {
+  display: none;
+  position: absolute;
+  top: 46px;
+  right: 0;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.user_nav ul li {
+  background-color: #F8F8FF;
+}
+.user_nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid #d8d8d8;
+}
 
 .user-nickname {
   text-decoration: none;
@@ -55,20 +85,42 @@
 }
 
 .logout {
+  margin-left: 30px;
+  width: 150px;
+  height: 45px;
+  padding-top: 5px;
+  cursor: pointer;
   text-decoration: none;
   color: #333333;
+  border: 2px solid #57C3E9;
 }
 
+.grid-6 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  display: flex;
+  position: relative;
+  right: 0;
+}
 .login {
   text-decoration: none;
+  width: 150px;
+  height: 45px;
+  padding-top: 5px;
   line-height: 32px;
   margin-right: 5vw;
   color: #333333;
   font-weight: bold;
+  border: 2px solid #57C3E9;
 }
-
 .sign-up {
   text-decoration: none;
+  width: 150px;
+  height: 45px;
+  padding-top: 5px;
   color: #333333;
   font-weight: bold;
+  border: 2px solid #57C3E9;
 }
