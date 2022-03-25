@@ -198,6 +198,50 @@ a {
 
 /* //新着投稿一覧 */
 
+/* 下部広告部分 */
+/* items/index.htmlの広告cssを所々使いまわしています。 */
+
+.ad-footer-contents {
+  width: 100vw;
+  background-image: image-url('food7.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #339933;
+  text-shadow: 0 0 3px rgba(96, 221, 115, 0.9);
+}
+
+.ad-footer-title {
+  font-size: 4vh;
+  margin-bottom: 2vh;
+}
+
+.store-btn {
+  display: flex;
+  margin-top: 24px;
+}
+
+.apple-btn {
+  margin-right: 1vw;
+  height: 9vh;
+}
+
+.google-btn {
+  height: 9vh;
+}
+
+.ad-footer-explain {
+  font-size: 3vh;
+  line-height: 30px;
+}
+
+/* //下部広告部分 */
+
 /* 今すぐ相談するボタン */
 .purchase-btn {
   width: 300px;
