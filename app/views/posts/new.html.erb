@@ -5,7 +5,7 @@
     <h2 class="posts-title">投稿する</h2>
     <%= form_with model: @post, local: true do |f| %>
 
-    <%# <%= render 'shared/error_messages', model: f.object %>
+    <%= render 'shared/error_messages', model: f.object %>
 
     <%# 投稿のカテゴリー %>
     <div class="posts-detail">
