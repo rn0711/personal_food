@@ -61,50 +61,28 @@
   </div>
   <%# /サービスの特徴部分 %>
 
-  <%# 新着投稿一覧 %>
-  <div class='item-contents'>
+ <%# 新着投稿一覧 %>
+  <div class='post-new-lists'>
     <h2 class='title'>
       新着投稿記事
     </h2>
-    <ul class='item-lists'>
+    <ul class='post-inside'>
 
-      <%# 商品のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
+      <% @posts.each do |post| %>
       <li class='list'>
         <%= link_to "#" do %>
-        <div class='item-img-content'>
-          <%# <%= image_tag "item-sample.png", class: "item-img" %>
+        <div class='inside-img-content'>
+          <%= image_tag post.image, class: "post-inside-img" if post.image.attached? %>
         </div>
-        <div class='item-info'>
-          <h3 class='post-title'>
-            <%= "postタイトル" %>
+        <div class='inside-info'>
+          <h3 class='inside-title'>
+            <%= post.title %>
           </h3>
-          <div class='star-btn'>
-            <%# <%= image_tag "star.png", class:"star-icon" %>
-            <span class='star-count'>0</span>
-          </div>
         </div>
         <% end %>
-      </li>
-      <%# //商品のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
+      </li> 
+      <% end %>
 
-      <%# 投稿がない場合は以下のダミー商品が表示されるようにしましょう %>
-      <%# 投稿が場合は表示されないようにしましょう %>
-      <li class='list'>
-        <%= link_to '#' do %>
-        <%# <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "item-img" %>
-        <div class='item-info'>
-          <h3 class='post-title'>
-            おすすめ低糖商品
-          </h3>
-          <div class='star-btn'>
-            <%# <%= image_tag "star.png", class:"star-icon" %>
-            <span class='star-count'>0</span>
-          </div>
-        </div>
-        <% end %>
-      </li>
-      <%# //投稿がある場合は表示されないようにしましょう %>
-      <%# //投稿がないない場合は以下のダミー商品が表示されるようにしましょう %>
     </ul>
   </div>
   <%# /新着投稿一覧 %>
@@ -128,4 +106,5 @@
   <%= link_to('#', class: 'purchase-btn') do %>
   <%= image_tag "consultation2.png" , size: '160x100' ,class: "purchase-btn-icon" %>
   <% end %>
+
   <%= render "shared/footer" %>

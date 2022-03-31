@@ -3,7 +3,7 @@
 <div class="posts-contents">
   <div class="posts-main">
     <h2 class="posts-title">投稿する</h2>
-    <%= form_with model: @item, local: true do |f| %>
+    <%= form_with model: @post, local: true do |f| %>
 
     <%# <%= render 'shared/error_messages', model: f.object %>
 
@@ -18,7 +18,6 @@
         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"post-category"}) %>
       </div>
       </div>
-      
     <%# /投稿のカテゴリー %>
 
     <%# 投稿タイトル %>
@@ -27,9 +26,10 @@
         タイトル名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :itemname, class:"posts-text", id:"post-name", placeholder:"タイトル名（必須 40文字まで)", maxlength:"40" %>
+      <%= f.text_area :title, class:"posts-text", id:"post-name", placeholder:"タイトル名（必須 40文字まで)", maxlength:"40" %>
     </div>
     <%# /投稿タイトル %>
+
     <%# 投稿画像 %>
     <div class="img-upload">
       <div class="weight-bold-text">
@@ -40,23 +40,26 @@
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :hoge, id:"post-image" %>
+        <%= f.file_field :image, id:"post-image" %>
       </div>
     </div>
     <%# /投稿画像 %>
+
     <%# 投稿テキスト %>
       <div class="weight-bold-text">
         テキスト
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :introduction, class:"posts-text", id:"post-info", placeholder:"レシピやおすすめ商品の紹介、食事記録やメッセージなど（必須1,000文字まで）" ,rows:"7" ,maxlength:"1000" %>
+      <%= f.text_area :text, class:"posts-text", id:"post-info", placeholder:"レシピやおすすめ商品の紹介、食事記録やメッセージなど（必須1,000文字まで）" ,rows:"7" ,maxlength:"1000" %>
     <%# /投稿テキスト %>
+
     <%# 下部ボタン %>
     <div class="post-btn-contents">
       <%= f.submit "投稿する" ,class:"post-btn" %>
       <%=link_to 'もどる', posts_path, class:"back-btn" %>
     </div>
     <%# /下部ボタン %>
+    
   </div>
   <% end %>
 </div>
