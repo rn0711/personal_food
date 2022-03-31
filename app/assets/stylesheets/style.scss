@@ -23,11 +23,9 @@ a {
   padding: 5vh 15vw;
   color: #333333;
 }
-
 .service-title {
   font-size: 10vh;
 }
-
 .service-explain {
   font-size: 5vh;
   line-height: 40px;
@@ -41,30 +39,25 @@ a {
   margin: 50px;
   padding: 20px 0;
 }
-
 .section-contents-left {
   width: 48%;
   margin-right: 20px;
 }
-
 .section-titile {
   font-size: 6vh;
   text-align: center;
   margin-top: 10vh;
   padding: 20px 0;
 }
-
 .section-explain {
   padding: 25px;
   line-height: 2;
   font-size: 2.5vh;
 }
-
 .section-contents-right {
   display: block;
   width: 48%;
 }
-
 .right-pict {
   width: 100%;
 }
@@ -74,39 +67,33 @@ a {
 .select-reason-contents {
   padding: 0 12vw;
 }
-
 .select-reason-contents>.title {
   text-align: center;
   font-size: 5vh;
   font-weight: bold;
   margin-bottom: 7vh;
 }
-
 .reason-lists {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .reason-lists>.list {
   width: 33vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .list-pict {
   margin-bottom: 20px;
   width: 100%;
   border-radius: 50%;
 }
-
 .reason-list-text {
   font-weight: bold;
   font-size: 23px;
   line-height: 50px;
 }
-
 .reason-list-description {
   font-size: 18px;
   margin-top: 20px;
@@ -114,23 +101,20 @@ a {
 /* //サービスの特徴部分 */
 
 /* 新着投稿一覧 */
-
-.item-contents {
+.post-new-lists {
   background-color: #FFF;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10vh 0;
 }
-
-.item-contents>.title {
+.post-new-lists>.title {
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
   position: relative;
 }
-
-.item-contents>.title::after {
+.post-new-lists>.title::after {
   content: '';
   width: 250px;
   height: 4px;
@@ -140,67 +124,44 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
-
-.item-lists {
+.post-inside {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
-
-.item-lists>.list {
+.post-inside>.list {
   width: 37vh;
   padding: 1vw;
   background-color: #FFF;
 }
-
-
-.item-img-content {
+.inside-img-content {
   position: relative;
+  transition-duration: 0.5s;
 }
-
-.item-img {
+.inside-img-content:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.post-inside-img {
   width: 33vh;
   height: 33vh;
 }
-
-.sold-out>span {
-  color: #FFF;
-  font-size: 45px;
-  font: bold;
-}
-
-
-.item-info {
+.inside-info {
   background-color: #FFF;
-  color: black;
-  padding: 1vw;
 }
-
-.post-titile {
-  font-size: 2.5vh;
-}
-
-.star-btn {
-  display: flex;
-  align-items: center;
-}
-
-.star-icon {
-  height: 2vh;
-  width: 2vh;
-  margin-right: 0.5vw;
-}
-
-.star-count {
+.inside-title {
   font-size: 2vh;
+  text-align: center;
+  margin-top: 4vh;
 }
-
+.inside-title:hover {
+  color: red;
+}
 /* //新着投稿一覧 */
 
 /* 下部広告部分 */
-/* items/index.htmlの広告cssを所々使いまわしています。 */
-
 .ad-footer-contents {
   width: 100vw;
   background-image: image-url('food7.png');
@@ -215,31 +176,25 @@ a {
   color: #339933;
   text-shadow: 0 0 3px rgba(96, 221, 115, 0.9);
 }
-
 .ad-footer-title {
   font-size: 4vh;
   margin-bottom: 2vh;
 }
-
 .store-btn {
   display: flex;
   margin-top: 24px;
 }
-
 .apple-btn {
   margin-right: 1vw;
   height: 9vh;
 }
-
 .google-btn {
   height: 9vh;
 }
-
 .ad-footer-explain {
   font-size: 3vh;
   line-height: 30px;
 }
-
 /* //下部広告部分 */
 
 /* 今すぐ相談するボタン */
@@ -253,7 +208,6 @@ a {
   position: fixed;
   padding: 15px;
 }
-
 .purchase-btn-icon {
   width: 100%;
 }

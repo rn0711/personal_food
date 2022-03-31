@@ -187,6 +187,7 @@
   border-radius: 30px;
 }
 
+/* 共通 */
 .indispensable {
   background: #ea352d;
   margin-left: 8px;
@@ -196,3 +197,4 @@
   font-size: 12px;
   font-weight: bold;
 }
+/* //共通 */

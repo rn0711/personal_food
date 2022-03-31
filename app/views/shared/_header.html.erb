@@ -1,7 +1,7 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class='top-page-header'>
   <div class='header-bar-contents'>
-    <%= link_to 'パーソナル食', "#", class: "header-title" %>
+    <%= link_to 'パーソナル食', root_path, class: "header-title" %>
       <% if user_signed_in? %>
         <div class="user_nav">
         <span><%= current_user.nickname %>
@@ -9,7 +9,7 @@
             <li>
               <%= link_to "マイページ", "#" %>
               <%= link_to "食事相談", "#" %>
-              <%= link_to "投稿一覧", "#" %>
+              <%= link_to "投稿一覧", posts_path, class: "posts-list" %>
             </li>
           </ul>
         </span>
