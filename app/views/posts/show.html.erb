@@ -1,0 +1,55 @@
+<%= render "shared/header" %>
+
+<%# 投稿の概要 %>
+<div class="post-show">
+  <div class="post-box">
+    <h1 class="category-name">
+      <%= @post.category.name %>
+    </h1>
+    <h2 class="title">
+      <%= @post.title %>
+    </h2>
+    <div class="post-img-content">
+      <%= image_tag @post.image ,class:"post-box-img" %>
+    </div>
+    <div class="text">
+      <span><%= @post.text %></span>
+    </div>
+
+    <% if user_signed_in? %>
+      <% if current_user.id == @post.user.id %>
+        <div class="user-current">
+          <%= link_to image_tag "pen2.png", class: "user-current-icon" %>
+          <%= link_to "編集する", "#", method: :get, class: "user-currentbtn" %>
+          <p class="or-text">or</p>
+          <%= link_to image_tag "dustbox2.png", class: "user-current-icon" %>
+          <%= link_to "削除する", "#", method: :delete, class:"user-currentbtn", id:"deletebtn" %>
+        </div>
+      <% end %>
+    <% end %>
+
+    <div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        不快な言葉遣いなどは利用制限や退会処分となることがあります。
+      </p>
+      <button type="submit" class="comment-btn">
+        <%= image_tag "comment4.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+        <span>コメントする<span>
+      </button>
+    </form>
+    </div>
+
+    <div class="links">
+      <%=link_to 'もどる', posts_path, class:"post-index-backbtn" %>
+    </div>
+  </div>
+</div>
+ <%# /投稿の概要 %>
+
+<div class="category-title">
+  <a href="#" class="another-item"><%= @post.category.name %>をもっと見る</a>
+</div>
+
+<%= render "shared/footer" %>

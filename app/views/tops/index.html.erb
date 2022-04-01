@@ -68,9 +68,10 @@
     </h2>
     <ul class='post-inside'>
 
+    <% if user_signed_in? %>
       <% @posts.each do |post| %>
       <li class='list'>
-        <%= link_to "#" do %>
+        <%= link_to post_path(post.id), method: :get do %>
         <div class='inside-img-content'>
           <%= image_tag post.image, class: "post-inside-img" if post.image.attached? %>
         </div>
@@ -82,6 +83,22 @@
         <% end %>
       </li> 
       <% end %>
+    <% else %>
+      <% @posts.each do |post| %>
+      <li class='list'>
+        <%= link_to new_user_session_path, method: :get do %>
+        <div class='inside-img-content'>
+          <%= image_tag post.image, class: "post-inside-img" if post.image.attached? %>
+        </div>
+        <div class='inside-info'>
+          <h3 class='inside-title'>
+            <%= post.title %>
+          </h3>
+        </div>
+        <% end %>
+      </li> 
+      <% end %>
+    <% end %>
 
     </ul>
   </div>

@@ -1,0 +1,119 @@
+/* 投稿の概要 */
+.category-name {
+  margin: 20px 0;
+  font-size: 20px;
+}
+.post-show {
+  background-color: #f8f8f8;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+}
+.post-box {
+  background-color: #FFF;
+  width: 70vw;
+  min-width: 1200px;
+  padding: 10vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post-box>.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.post-box-img {
+  height: 50vh;
+  width: 60vw;
+  min-height: 500px;
+  object-fit: contain;
+}
+.post-box>.text {
+  font-size: 16px;
+  margin: 20px 0px;
+  overflow-wrap: anywhere;
+}
+.user-current {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.user-current-icon {
+  width: 3vw;
+}
+.user-currentbtn {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 3vh 1vw;
+}
+.or-text {
+  font-size: 20px;
+  margin: 0px 30px 0px 20px;
+}
+#deletebtn {
+  color: red;
+}
+.comment-box {
+  width: 60vw;
+  background-color: #fff;
+  margin: 5vh 0;
+  text-align: center;
+}
+.comment-text {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: solid 2px #dedede;
+  resize: none;
+}
+.comment-warn {
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px 0px;
+  text-align: left;
+}
+.comment-btn {
+  line-height: 48px;
+  background-color: #ff6347;
+  border: 1px solid #ff6347;
+  color: #fff;
+  width: 40%;
+  min-width: 150px;
+  font-size: 18px;
+  border-radius: 100px;
+  margin-bottom: 2vh;
+}
+.comment-flag-icon {
+  margin: 10px 5px 0 0;
+  padding-top: 3px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+}
+.post-index-backbtn {
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 15px 35%;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* /投稿の概要 */
+
+.category-title {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.another-item {
+  color: #3CCACE;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 23px;
+}
