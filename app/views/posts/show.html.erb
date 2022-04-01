@@ -23,7 +23,7 @@
           <%= link_to "編集する", edit_post_path, method: :get, class: "user-currentbtn" %>
           <p class="or-text">or</p>
           <%= link_to image_tag "dustbox2.png", class: "user-current-icon" %>
-          <%= link_to "削除する", "#", method: :delete, class:"user-currentbtn", id:"deletebtn" %>
+          <%= link_to "削除する", post_path, method: :delete, class:"user-currentbtn", id:"deletebtn" %>
         </div>
       <% end %>
     <% end %>

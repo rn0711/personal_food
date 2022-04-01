@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: [:index, :new, :create, :show, :edit, :update]
-  before_action :set_item, only: [:show, :edit, :update]
-  before_action :contributor_confirmation, only: [:edit, :update]
+  before_action :authenticate_user!
+  before_action :set_item, only: [:show, :edit, :update, :destroy]
+  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
     @posts = Post.all.order("created_at DESC")
@@ -34,6 +34,14 @@ class PostsController < ApplicationController
     end
   end
 
+  def destroy
+    if @post.destroy
+      redirect_to posts_path
+    else
+      redirect_to posts_path
+    end
+  end
+  
   private
 
   def post_params
