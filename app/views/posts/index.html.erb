@@ -30,7 +30,7 @@
       <h3>
 
       <div class='post-detail'>
-        <%= link_to "#" do %>
+        <%= link_to post_path(post.id), method: :get do %>
         <div class='post-img-content'>
           <%= image_tag post.image, class: "post-img" if post.image.attached? %>
         </div>
