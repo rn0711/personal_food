@@ -13,7 +13,7 @@
       <%= image_tag @post.image ,class:"post-box-img" %>
     </div>
     <div class="text">
-      <span><%= @post.text %></span>
+      <span><%= simple_format(@post.text) %></span>
     </div>
 
     <% if user_signed_in? %>
