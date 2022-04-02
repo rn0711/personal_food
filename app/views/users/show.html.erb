@@ -1,0 +1,49 @@
+<%= render "shared/header" %>
+
+<div class="post-contents">
+    <div class='search-bar-contents'>
+      <form class="search-form" action="#">
+        <input class='input-box' placeholder='検索：キーワードから探す'>
+        <button class="search-button">
+          <%= image_tag "search4.png", class:"search-icon" %>
+        </button>
+      </form>
+    </div>
+
+    <div class='post-up'>
+    <%= link_to(new_post_path, class: 'post-btn') do %>
+      <span class='post_btn-text'>投稿する</span>
+      <%= image_tag 'camera5.png' , size: '100x40' ,class: "post-btn-icon" %>
+    <% end %>
+    </div>
+  </div>
+
+  <div class='post-lists'>
+    <h2 class='subtitle'><%= @nickname %>さんの投稿一覧</h2>
+  </div>
+  <ul class='post-list'>
+
+    <% @posts.each do |post| %>
+    <li class='list'>
+
+      <h3 class='post-category'>
+        <span>#：<%= post.category.name%>
+      <h3>
+
+      <div class='post-detail'>
+        <%= link_to post_path(post.id), method: :get do %>
+        <div class='post-img-content'>
+          <%= image_tag post.image, class: "post-img" if post.image.attached? %>
+        </div>
+        <% end %>
+        <div class='post-text'>
+          <%= post.text.truncate(50) %>
+        </div>
+      </div>
+    </li>
+    <% end %>
+  
+  </ul>
+</div>
+
+<%= render "shared/footer" %>
