@@ -104,6 +104,12 @@
   opacity: 0.6;
   transition-duration: 0.3s;
 }
+.post-username {
+  font-size: 3.5vh;
+  display: block;
+  text-align: left;
+  padding-left: 60px;
+}
 .post-category {
   font-size: 2.5vh;
   text-align: center;

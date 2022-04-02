@@ -19,20 +19,17 @@
   </div>
 
   <div class='post-lists'>
-    <h2 class='subtitle'>投稿一覧</h2>
+    <h2 class='subtitle'><%= @nickname %>さんの投稿一覧</h2>
   </div>
   <ul class='post-list'>
 
     <% @posts.each do |post| %>
     <li class='list'>
-      <span class="post-username">
-        <a href="/users/<%= post.user.id %>">
-          <%= post.user.nickname %>
-        </a>
-      </span>
+
       <h3 class='post-category'>
         <span>#：<%= post.category.name%>
       <h3>
+
       <div class='post-detail'>
         <%= link_to post_path(post.id), method: :get do %>
         <div class='post-img-content'>
