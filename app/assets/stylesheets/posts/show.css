@@ -116,8 +116,14 @@ form input[type="submit"]:hover {
   text-decoration: none;
   font-size: 20px;
 }
+.comment-title {
+  margin: 55px 0 20px 0;
+  font-size: 25px;
+}
+.comments p {
+  margin: 10px 0;
+}
 /* //コメント欄 */
-
 .category-title {
   background-color: #f8f8f8;
   text-align: center;
