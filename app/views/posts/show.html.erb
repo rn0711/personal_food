@@ -32,26 +32,27 @@
         </div>
       <% end %>
     <% end %>
+<%# /投稿の概要 %>
 
+<%# コメント欄 %>
     <div class="comment-box">
-    <form>
-      <textarea class="comment-text"></textarea>
+      <% if user_signed_in? %>
+        <%= form_with(model: [@post, @comment], local: true) do |f| %>
+          <%= f.text_area :text, placeholder: "コメントする", rows: "2" %>
+          <%= f.submit "コメント", class: "send-btn" %>
+        <% end %>
+      <% end %>
       <p class="comment-warn">
-        不快な言葉遣いなどは利用制限や退会処分となることがあります。
+          不快な言葉遣いなどは利用制限や退会処分となることがあります。
       </p>
-      <button type="submit" class="comment-btn">
-        <%= image_tag "comment4.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-        <span>コメントする<span>
-      </button>
-    </form>
-    </div>
 
     <div class="links">
       <%=link_to 'もどる', posts_path, class:"post-index-backbtn" %>
     </div>
   </div>
+  </div>
 </div>
- <%# /投稿の概要 %>
+ <%# /コメント欄 %>
 
 <div class="category-title">
   <a href="#" class="another-item"><%= @post.category.name %>をもっと見る</a>
