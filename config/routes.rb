@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'messages/index'
   devise_for :users
 
   root to: "tops#index"
@@ -11,4 +12,6 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
+
+  resources :messages
 end
