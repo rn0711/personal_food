@@ -22,7 +22,6 @@
   <ul class='post-list'>
 
     <% @posts.each do |post| %>
-    <li class='list'>
       <span class="post-username">
         <a href="/users/<%= post.user.id %>">
           <%= post.user.nickname %>
