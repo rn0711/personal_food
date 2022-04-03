@@ -75,6 +75,9 @@
 .click-upload>p {
   margin-bottom: 15px;
 }
+#post-image {
+  width: 100%;
+}
 /* //投稿画像 */
 
 /* 投稿テキスト */
