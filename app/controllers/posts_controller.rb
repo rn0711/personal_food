@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_item, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
@@ -44,13 +44,17 @@ class PostsController < ApplicationController
     end
   end
   
+  def search
+    @posts = Post.search(params[:keyword]).order('created_at DESC')
+  end
+
   private
 
   def post_params
     params.require(:post).permit(:image, :title, :category_id, :text).merge(user_id: current_user.id)
   end
 
-  def set_item
+  def set_post
     @post = Post.find(params[:id])
   end
 
