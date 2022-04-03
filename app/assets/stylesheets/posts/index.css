@@ -4,38 +4,37 @@
   padding-top: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
 .search-bar-contents {
   margin-left: 60px;
 }
 .search-form {
-  width: 42vw;
+  width: 50vw;
   height: 6vh;
+  padding-top: 15px;
   display: flex;
   position: relative;
 }
 .search-form>.input-box {
-  width: 100%;
+  width: 60%;
   border: 2px solid #ff6347;
   border-right: none;
   padding: 6px;
-  height: 36px;
+  height: 45px;
   border-radius: 5px 0 0 5px;
   outline: none;
+  margin: 0px 0 15px;
 }
-.search-button {
-  width: 40px;
-  height: 36px;
+.search-form>.search-button {
+  height: 45px;
   border: 1px solid #ff6347;
   background: #ff6347;
   text-align: center;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-}
-.search-icon {
-  width: 100%;
+  width: 10%;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 .post-up {
@@ -73,7 +72,6 @@
   width: 30%;
   display: flex;
 }
-
 /* //検索バー・投稿ボタン */
 
 /* 投稿一覧 */
@@ -93,6 +91,7 @@
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 .post-list>.list {
   width: 32%;
