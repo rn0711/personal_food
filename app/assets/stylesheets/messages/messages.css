@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  padding-top: 75px;
 }
 
 .side-bar {
@@ -17,8 +18,8 @@
   align-items: center;
 }
 
-.header-name a{
-  font-size: 16px;
+.header-name p{
+  font-size: 20px;
   color: #FAFAFA;
   text-decoration: none;
 }
@@ -59,7 +60,7 @@
   justify-content: space-between;
 }
 
-.header-title {
+.message-header-title {
   color: #333;
   font-size: 24px;
   margin-top: 36px;
