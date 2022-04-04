@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'messages/index'
   devise_for :users
 
   root to: "tops#index"
@@ -14,4 +13,5 @@ Rails.application.routes.draw do
   end
 
   resources :messages
+  resources :rooms, only: [:index, :new, :create]
 end
