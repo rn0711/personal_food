@@ -83,7 +83,7 @@ https://personal-food.herokuapp.com/
 アプリの主な機能の特徴
 
 ## トップページ
-[![Image from Gyazo](https://i.gyazo.com/ecb245aeb7ed3caf86deb83e07811638.gif)](https://gyazo.com/ecb245aeb7ed3caf86deb83e07811638)
+[![Image from Gyazo](https://i.gyazo.com/a10cceb088b8c1af516d3b3e60ddce1a.gif)](https://gyazo.com/a10cceb088b8c1af516d3b3e60ddce1a)
 パーソナル食のトップページです。<br>
 トップページから新規登録やログインができます。
 
